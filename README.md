@@ -1,4 +1,4 @@
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=40e0d0&width=435&lines=Welcome+to+My+WTCC+Degree+Journey!)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=40e0d0&width=435&lines=Welcome+to+My+Degree+Journey!)](https://git.io/typing-svg)
 
 Hello everyone! Greetings to my personal GitHub account. This GitHub is a dynamic portfolio showcasing a blend of app and web development projects, built with technologies like JavaScript, Python, Node.js, TypeScript, and Jupyter Notebooks. It reflects my journey in software engineering, serving as both a professional showcase and a learning hub.
 
