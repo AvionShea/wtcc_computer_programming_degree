@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="HTML form for collecting student information"
+    />
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="/reinforced_learning/form_styles.css" />
+  </head>
+  <body>
+    <div>
+      <form action="/submit-form" method="post">
+        <h1>Student Information</h1>
+        <section>
+          <fieldset>
+            <legend>Personal Information (Required)</legend>
+            <p>
+              <label for="first-name">First Name:</label>
+              <input
+                class="requiredField"
+                type="text"
+                id="first-name"
+                name="first-name"
+                placeholder="Enter your first name"
+                required
+                title="Please enter a valid first name using only letters"
+              />
+            </p>
+            <p>
+              <label for="last-name">Last Name:</label>
+              <input
+                class="requiredField"
+                type="text"
+                id="last-name"
+                name="last-name"
+                placeholder="Enter your last name"
+                required
+                title="Please enter a valid last name using only letters"
+              />
+            </p>
+            <p>
+              <label for="email">Email:</label>
+              <input
+                class="requiredField"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+            </p>
+          </fieldset>
+        </section>
+
+        <section>
+          <p>
+            <label>Are you a student?</label>
+            <input
+              class="point"
+              checked
+              type="radio"
+              id="yes"
+              name="student"
+              value="yes"
+              required
+            />
+            <label class="point" for="yes">Yes</label>
+            <input
+              class="point"
+              type="radio"
+              id="no"
+              name="student"
+              value="no"
+            />
+            <label class="point" for="no">No</label>
+          </p>
+        </section>
+
+        <section>
+          <p>
+            <label for="year">What year are you currently in?</label>
+            <select id="year" name="year">
+              <option value="freshman">Freshman</option>
+              <option value="sophomore">Sophomore</option>
+              <option value="junior">Junior</option>
+              <option value="senior">Senior</option>
+            </select>
+          </p>
+        </section>
+
+        <section>
+          <p>
+            <label for="credit">How many credits have you taken?</label>
+            <input type="number" id="credit" name="credit" min="0" max="200" />
+          </p>
+        </section>
+
+        <section>
+          <p>
+            <label for="courses">What courses have you taken?</label>
+          </p>
+          <input type="checkbox" id="java" name="java" value="java" />
+          <label for="java">Java</label>
+          <input type="checkbox" id="python" name="python" value="python" />
+          <label for="python">Python</label>
+          <input
+            type="checkbox"
+            id="javascript"
+            name="javascript"
+            value="javascript"
+          />
+          <label for="javascript">JavaScript</label>
+          <input type="checkbox" id="web" name="web" value="web" />
+          <label for="web">Web Development</label>
+        </section>
+
+        <section>
+          <p>
+            <label for="satisfied"
+              >How satisfied are you with your education?</label
+            >
+            <input list="satisfaction" id="satisfied" name="satisfied" />
+            <datalist id="satisfaction">
+              <option value="A little"></option>
+              <option value="Average"></option>
+              <option value="A lot"></option>
+            </datalist>
+          </p>
+        </section>
+
+        <section>
+          <p>
+            <label for="recommend"
+              >How likely are you to recommend this program?</label
+            >
+            <span>Not at all</span>
+            <input
+              type="range"
+              id="recommend"
+              name="recommend"
+              step="1"
+              min="0"
+              max="10"
+            />
+            <span>Very likely</span>
+          </p>
+        </section>
+
+        <section>
+          <p>
+            <label for="comments">Comments:</label>
+            <textarea
+              id="comments"
+              name="comments"
+              rows="4"
+              cols="50"
+              placeholder="Enter your comments here"
+            ></textarea>
+          </p>
+        </section>
+
+        <section>
+          <span>
+            <input type="submit" value="Submit" />
+          </span>
+          <span><input type="reset" value="Reset Form" /></span>
+        </section>
+      </form>
+    </div>
+    <footer>© 2025 Blvck Lotus Designs. All rights reserved.</footer>
+  </body>
+</html>

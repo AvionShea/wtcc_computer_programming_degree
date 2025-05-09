@@ -1,0 +1,40 @@
+body {
+  margin: auto;
+  padding: 30px;
+  background-color: blanchedalmond;
+}
+div {
+  border: 3px solid black;
+  border-radius: 23px;
+  background-color: beige;
+  box-shadow: 10px 12px 5px rgb(90, 90, 90);
+}
+
+form {
+  margin: 50px;
+}
+.requiredField:invalid {
+  border-color: crimson;
+}
+
+.requiredField:valid {
+  border-color: green;
+}
+footer {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.point {
+  cursor: pointer;
+}
+
+input[type="radio"]:checked {
+  border-color: blueviolet;
+  background-color: blueviolet;
+  box-shadow: inset 0 0 0 0px white;
+  accent-color: blueviolet;
+}
+input[type="radio"]:checked + label {
+  color: blueviolet;
+}
